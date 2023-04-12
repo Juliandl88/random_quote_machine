@@ -1,19 +1,21 @@
 import React, { useEffect } from "react";
+import Link from "next/link";
 
 export default function Navbar() {
-    // esta useEffect es para solucionar el error de bootstrap
-    useEffect(()=>{
-        if(typeof document !== undefined){
-            require("bootstrap/dist/js/bootstrap")
-        }
-    }, [])
+  // esta useEffect es para solucionar el error de bootstrap
+  useEffect(() => {
+    if (typeof document !== undefined) {
+      require("bootstrap/dist/js/bootstrap");
+    }
+  }, []);
   return (
     <div>
-      <nav className="navbar navbar-expand-lg bg-body-tertiary">
+      <nav className="navbar navbar-expand-lg bg-dark-subtle text-emphasis-dark">
         <div className="container-fluid">
-          <a className="navbar-brand" href="#">
+          <Link href="/formulario" className="navbar-brand">
             Navbar
-          </a>
+          </Link>
+
           <button
             className="navbar-toggler"
             type="button"
@@ -28,9 +30,9 @@ export default function Navbar() {
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav me-auto ms-auto mb-2 mb-lg-0">
               <li className="nav-item">
-                <a className="nav-link active" aria-current="page" href="#">
-                  Home
-                </a>
+                <Link href="/" className="nav-link active" aria-current="page">
+                    Home
+                </Link>
               </li>
               <li className="nav-item">
                 <a className="nav-link" href="#">
