@@ -12,8 +12,8 @@ export default function Navbar() {
     <div>
       <nav className="navbar navbar-expand-lg bg-dark-subtle text-emphasis-dark">
         <div className="container-fluid">
-          <Link href="/formulario" className="navbar-brand">
-            Navbar
+          <Link href="/" className="navbar-brand">
+            Home
           </Link>
 
           <button
@@ -30,45 +30,28 @@ export default function Navbar() {
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav me-auto ms-auto mb-2 mb-lg-0">
               <li className="nav-item">
-                <Link href="/" className="nav-link active" aria-current="page">
-                    Home
+                <Link
+                  href="/formulario"
+                  className="nav-link active"
+                  aria-current="page"
+                >
+                  Crear
                 </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">
-                  Link
-                </a>
+                <Link href="#" className="nav-link active" aria-current="page">
+                  Actualizar
+                </Link>
               </li>
-              <li className="nav-item dropdown">
-                <a
-                  className="nav-link dropdown-toggle"
-                  href="#"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Dropdown
-                </a>
-                <ul className="dropdown-menu">
-                  <li>
-                    <a className="dropdown-item" href="#">
-                      Action
-                    </a>
-                  </li>
-                  <li>
-                    <a className="dropdown-item" href="#">
-                      Another action
-                    </a>
-                  </li>
-                  <li>
-                    <hr className="dropdown-divider"></hr>
-                  </li>
-                  <li>
-                    <a className="dropdown-item" href="#">
-                      Something else here
-                    </a>
-                  </li>
-                </ul>
+              <li className="nav-item">
+                <Link href="#" className="nav-link active" aria-current="page">
+                  Eliminar
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link href="#" className="nav-link active" aria-current="page">
+                  Listar
+                </Link>
               </li>
             </ul>
             <form className="d-flex" role="search">
