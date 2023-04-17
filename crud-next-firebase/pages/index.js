@@ -3,6 +3,7 @@ import Image from "next/image";
 import styles from "../styles/Home.module.css";
 import Link from "next/link";
 import Layout from "../components/Layout";
+import { useRouter } from "next/router";
 
 //importamos firebase
 import firebaseApp from "../firebase";
@@ -21,6 +22,9 @@ import {
 const db = getFirestore(firebaseApp);
 
 export default function Home({ productos }) {
+
+  const router = useRouter();
+
   return (
     <Layout>
       <Head>
