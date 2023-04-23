@@ -2,7 +2,7 @@
 export default function about(){
     return(
         <div>
-            This is a ABOUT page
+            <h1>This is a ABOUT page</h1>
         </div>
     )
 }
