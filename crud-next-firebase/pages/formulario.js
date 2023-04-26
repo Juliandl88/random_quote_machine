@@ -48,7 +48,6 @@ export default function Formulario() {
       <div>
        <div className='container'>
         <h2 className='text-center'>Formulario para creacion de productos</h2>
-        <h2 className='text-center'>Formulario para creacion de productos</h2>
       <div className='card card-body'>
         <form onSubmit={enviarInfo}>
             <div className='form-group'>
