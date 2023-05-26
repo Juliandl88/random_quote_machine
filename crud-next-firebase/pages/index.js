@@ -28,7 +28,7 @@ export default function Home({ productos }) {
   return (
     <Layout>
       <Head>
-        <title>Crud Next + Firebase</title>
+        <title>Crud Next with Firebase</title>
         <meta name="description" content="Crud Next Firebase" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
