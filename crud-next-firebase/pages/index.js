@@ -34,7 +34,7 @@ export default function Home({ productos }) {
       </Head>
       <div className="container">
         <Link href="/formulario">
-          <button className="btn btn-primary mb-4">Agregar producto</button>
+          <button className="btn btn-primary mb-4">Agregar</button>
         </Link>
 
         <div className="row">
@@ -47,7 +47,7 @@ export default function Home({ productos }) {
                 className="btn btn-danger"
                 onClick={() => router.push(`/producto/${product.id}`)}
               >
-                VER
+                VER MAS
               </button>
             </div>
           ))}
