@@ -28,13 +28,13 @@ export default function Home({ productos }) {
   return (
     <Layout>
       <Head>
-        <title>Crud Next & Firebase</title>
+        <title>Crud Next and Firebase</title>
         <meta name="description" content="Crud Next Firebase" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className="container">
         <Link href="/formulario">
-          <button className="btn btn-primary mb-4">Agregar Product</button>
+          <button className="btn btn-primary mb-4">Agregar Producto</button>
         </Link>
 
         <div className="row">
@@ -47,7 +47,7 @@ export default function Home({ productos }) {
                 className="btn btn-danger"
                 onClick={() => router.push(`/producto/${product.id}`)}
               >
-                VER MAS...
+                VER
               </button>
             </div>
           ))}
