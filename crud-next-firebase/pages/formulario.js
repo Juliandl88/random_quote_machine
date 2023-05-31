@@ -47,7 +47,7 @@ export default function Formulario() {
     <Layout>
       <div>
        <div className='container'>
-        <h2 className='text-center'>Formulario creacion de productos</h2>
+        <h2 className='text-center'>Form creaction product</h2>
       <div className='card card-body'>
         <form onSubmit={enviarInfo}>
             <div className='form-group'>
@@ -66,9 +66,9 @@ export default function Formulario() {
             </div>
 
             <button className='btn btn-primary'>
-                Enviar
+                Send
             </button>
-            <button className='btn btn-secondary ms-2' onClick={()=>router.push('/')} >volver</button>
+            <button className='btn btn-secondary ms-2' onClick={()=>router.push('/')} >Back</button>
         </form>
       </div>
     </div>
