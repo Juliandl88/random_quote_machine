@@ -47,7 +47,7 @@ export default function Home({ productos }) {
                 className="btn btn-danger"
                 onClick={() => router.push(`/producto/${product.id}`)}
               >
-                VER MAS
+                VER MAS PROD
               </button>
             </div>
           ))}

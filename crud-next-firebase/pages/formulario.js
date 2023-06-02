@@ -66,7 +66,7 @@ export default function Formulario() {
             </div>
 
             <button className='btn btn-primary'>
-                Enviar
+                Send
             </button>
             <button className='btn btn-secondary ms-2' onClick={()=>router.push('/')} >Back</button>
         </form>
